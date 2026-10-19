@@ -13,16 +13,16 @@ int main() {
 
 	for (x = 1.0; x<3.0;x += hx) {
 	    for (y = -.2;y >= -0.4; y -= hy) {
-		for (z = 0.5; z <= 1.5; z += hz) {
-		    u= -sqrt(y*y+4.0*x*x/3.0+(sin(x*x*x-y) - fabs(x*y))/(x*z));
-		    printf("%.1f %.1f %.1f %.6f\n",x,y,z,u);
+			for (z = 0.5; z <= 1.5; z += hz) {
+		    	u= -sqrt(y*y+4.0*x*x/3.0+(sin(x*x*x-y) - fabs(x*y))/(x*z));
+		    	printf("%.1f %.1f %.1f %.6f\n",x,y,z,u);
 		    if (u >mu) {
 		        mu=u;
-			mx=x;
-			my=y;
-			mz=z;
+				mx=x;
+				my=y;
+				mz=z;
 		    }
-		}
+			}
 	    }
 	}
 
